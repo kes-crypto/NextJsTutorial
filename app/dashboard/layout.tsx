@@ -1,5 +1,6 @@
 import SideNav from "../ui/dashboard/sidenav";
 
+//comments are a bitch
 export default function Layout({ children }: { children: React.ReactNode }) {
     return (
       <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
@@ -10,6 +11,3 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </div>
     );
   }
-
-  //children prop can receive another layout or page
-  //by default, the pages inside dashboard are automatically nested. 
