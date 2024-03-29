@@ -5,14 +5,12 @@ import {
   HomeIcon,
   DocumentDuplicateIcon,
   BanknotesIcon,
-  InformationCircleIcon
+
 } from '@heroicons/react/24/outline';
 import Link from 'next/link'
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
 
-{/* Map of links to display in the side navigation.
-Depending on the size of the application, this would be stored in a database.*/}
 
 
 const links = [
@@ -24,10 +22,10 @@ const links = [
   },
   { name: 'Customers', href: '/dashboard/customers', icon: UserGroupIcon },
   { name: 'Bank', href: '/dashboard/bank', icon: BanknotesIcon },
-  {name:'About',href:'/dashboard/about', icon:InformationCircleIcon },
+
 ];
 
-{/*Loops through the nav tabs and displays the routes on the sidebar*/}
+
 export default function NavLinks() {
 const usePath = usePathname()
   return (
@@ -54,7 +52,7 @@ const usePath = usePathname()
             </Link>
         );
       })}
-      //Using clsx to highlight the active link to blue
+      
     </>
   );
 }
