@@ -11,5 +11,3 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     );
   }
 
-  //children prop can receive another layout or page
-  //by default, the pages inside dashboard are automatically nested. 
